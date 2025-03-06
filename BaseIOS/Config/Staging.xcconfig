@@ -1,0 +1,13 @@
+//
+//  BaseIOS
+//
+//  Created by Nguyen Khai Hoan on 11/3/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_ENV = STAGING
+APP_NAME = BaseIOS-Staging
+BASE_URL = http:/$()/localhost:8080/api
+REALM_FILE_NAME = staging.realm

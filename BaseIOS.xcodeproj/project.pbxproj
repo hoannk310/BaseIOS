@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0EECE43A3367CB9B4233F111 /* Pods_BaseIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A1F7FD386AEF8CA0737D6 /* Pods_BaseIOS.framework */; };
+		2A81D7FA638268BE5F8580F9 /* Pods_BaseIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C60BC77DA30B20DEE26453B /* Pods_BaseIOSTests.framework */; };
+		D76E78E6ACE4233CFF6716A5 /* Pods_BaseIOS_BaseIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF41241D12D64FF080917504 /* Pods_BaseIOS_BaseIOSUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F0BC43B22D5496FD000ACF51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,16 +30,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F0BC439B2D5496FB000ACF51 /* BaseIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B43AF0FF3C3ABB9E81D1A3 /* Pods-BaseIOS-BaseIOSUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS-BaseIOSUITests.staging.xcconfig"; path = "Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		1C60BC77DA30B20DEE26453B /* Pods_BaseIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2A1F7FD386AEF8CA0737D6 /* Pods_BaseIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D29C319C9F31DBC21B8A94C /* Pods-BaseIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.release.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.release.xcconfig"; sourceTree = "<group>"; };
+		42C2B4A242DBBFC54814F1A2 /* Pods-BaseIOS.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.staging.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.staging.xcconfig"; sourceTree = "<group>"; };
+		9D1F50320647CB469401B351 /* Pods-BaseIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOSTests/Pods-BaseIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B72DE18F0CEF824A562E8071 /* Pods-BaseIOSTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOSTests.staging.xcconfig"; path = "Target Support Files/Pods-BaseIOSTests/Pods-BaseIOSTests.staging.xcconfig"; sourceTree = "<group>"; };
+		BD93B25C187117D0A86BF4B6 /* Pods-BaseIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOSTests.release.xcconfig"; path = "Target Support Files/Pods-BaseIOSTests/Pods-BaseIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF41241D12D64FF080917504 /* Pods_BaseIOS_BaseIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOS_BaseIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0BC439B2D5496FB000ACF51 /* BaseIOS-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BaseIOS-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC43B12D5496FD000ACF51 /* BaseIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC43BB2D5496FD000ACF51 /* BaseIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F189CA23E5D5BCB44EBD6F8C /* Pods-BaseIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS/Pods-BaseIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F1EFA1A103E39C9F1094B580 /* Pods-BaseIOS-BaseIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS-BaseIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE7427CD34318937D906CF8C /* Pods-BaseIOS-BaseIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS-BaseIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		F0BC43C32D5496FD000ACF51 /* Exceptions for "BaseIOS" folder in "BaseIOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				App/Info.plist,
 			);
 			target = F0BC439A2D5496FB000ACF51 /* BaseIOS */;
 		};
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EECE43A3367CB9B4233F111 /* Pods_BaseIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A81D7FA638268BE5F8580F9 /* Pods_BaseIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +99,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76E78E6ACE4233CFF6716A5 /* Pods_BaseIOS_BaseIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306176791087DF0CDE2D69DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A1F7FD386AEF8CA0737D6 /* Pods_BaseIOS.framework */,
+				CF41241D12D64FF080917504 /* Pods_BaseIOS_BaseIOSUITests.framework */,
+				1C60BC77DA30B20DEE26453B /* Pods_BaseIOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34D4E1151F5604D0B26C2C5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F189CA23E5D5BCB44EBD6F8C /* Pods-BaseIOS.debug.xcconfig */,
+				3D29C319C9F31DBC21B8A94C /* Pods-BaseIOS.release.xcconfig */,
+				F1EFA1A103E39C9F1094B580 /* Pods-BaseIOS-BaseIOSUITests.debug.xcconfig */,
+				FE7427CD34318937D906CF8C /* Pods-BaseIOS-BaseIOSUITests.release.xcconfig */,
+				9D1F50320647CB469401B351 /* Pods-BaseIOSTests.debug.xcconfig */,
+				BD93B25C187117D0A86BF4B6 /* Pods-BaseIOSTests.release.xcconfig */,
+				42C2B4A242DBBFC54814F1A2 /* Pods-BaseIOS.staging.xcconfig */,
+				13B43AF0FF3C3ABB9E81D1A3 /* Pods-BaseIOS-BaseIOSUITests.staging.xcconfig */,
+				B72DE18F0CEF824A562E8071 /* Pods-BaseIOSTests.staging.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F0BC43922D5496FB000ACF51 = {
 			isa = PBXGroup;
 			children = (
@@ -92,13 +139,15 @@
 				F0BC43B42D5496FD000ACF51 /* BaseIOSTests */,
 				F0BC43BE2D5496FD000ACF51 /* BaseIOSUITests */,
 				F0BC439C2D5496FB000ACF51 /* Products */,
+				34D4E1151F5604D0B26C2C5E /* Pods */,
+				306176791087DF0CDE2D69DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		F0BC439C2D5496FB000ACF51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0BC439B2D5496FB000ACF51 /* BaseIOS.app */,
+				F0BC439B2D5496FB000ACF51 /* BaseIOS-Dev.app */,
 				F0BC43B12D5496FD000ACF51 /* BaseIOSTests.xctest */,
 				F0BC43BB2D5496FD000ACF51 /* BaseIOSUITests.xctest */,
 			);
@@ -112,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0BC43C42D5496FD000ACF51 /* Build configuration list for PBXNativeTarget "BaseIOS" */;
 			buildPhases = (
+				829CAA56044A8B22DC53621F /* [CP] Check Pods Manifest.lock */,
 				F0BC43972D5496FB000ACF51 /* Sources */,
 				F0BC43982D5496FB000ACF51 /* Frameworks */,
 				F0BC43992D5496FB000ACF51 /* Resources */,
+				437D2DB2BC537DA453940218 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,16 +175,15 @@
 				F0BC439D2D5496FB000ACF51 /* BaseIOS */,
 			);
 			name = BaseIOS;
-			packageProductDependencies = (
-			);
 			productName = BaseIOS;
-			productReference = F0BC439B2D5496FB000ACF51 /* BaseIOS.app */;
+			productReference = F0BC439B2D5496FB000ACF51 /* BaseIOS-Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F0BC43B02D5496FD000ACF51 /* BaseIOSTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0BC43C92D5496FD000ACF51 /* Build configuration list for PBXNativeTarget "BaseIOSTests" */;
 			buildPhases = (
+				69E4A214F1AAF4BC91C8ACE7 /* [CP] Check Pods Manifest.lock */,
 				F0BC43AD2D5496FD000ACF51 /* Sources */,
 				F0BC43AE2D5496FD000ACF51 /* Frameworks */,
 				F0BC43AF2D5496FD000ACF51 /* Resources */,
@@ -147,8 +197,6 @@
 				F0BC43B42D5496FD000ACF51 /* BaseIOSTests */,
 			);
 			name = BaseIOSTests;
-			packageProductDependencies = (
-			);
 			productName = BaseIOSTests;
 			productReference = F0BC43B12D5496FD000ACF51 /* BaseIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0BC43CC2D5496FD000ACF51 /* Build configuration list for PBXNativeTarget "BaseIOSUITests" */;
 			buildPhases = (
+				2778AA3CA896E6F89CD57E07 /* [CP] Check Pods Manifest.lock */,
 				F0BC43B72D5496FD000ACF51 /* Sources */,
 				F0BC43B82D5496FD000ACF51 /* Frameworks */,
 				F0BC43B92D5496FD000ACF51 /* Resources */,
+				4BA9FC3724E9889841B5D31F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,8 +220,6 @@
 				F0BC43BE2D5496FD000ACF51 /* BaseIOSUITests */,
 			);
 			name = BaseIOSUITests;
-			packageProductDependencies = (
-			);
 			productName = BaseIOSUITests;
 			productReference = F0BC43BB2D5496FD000ACF51 /* BaseIOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +292,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2778AA3CA896E6F89CD57E07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseIOS-BaseIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		437D2DB2BC537DA453940218 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseIOS/Pods-BaseIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseIOS/Pods-BaseIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseIOS/Pods-BaseIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BA9FC3724E9889841B5D31F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69E4A214F1AAF4BC91C8ACE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		829CAA56044A8B22DC53621F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0BC43972D5496FB000ACF51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,70 +433,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F0BC43C52D5496FD000ACF51 /* Debug */ = {
+		F01AF8E12D80336400E69CDB /* Staging */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaseIOS/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nkh.BaseIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F0BC43C62D5496FD000ACF51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BaseIOS/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nkh.BaseIOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F0BC43C72D5496FD000ACF51 /* Debug */ = {
-			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F0BC439D2D5496FB000ACF51 /* BaseIOS */;
+			baseConfigurationReferenceRelativePath = Config/Staging.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -381,7 +472,207 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"STAGING=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		F01AF8E22D80336400E69CDB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C2B4A242DBBFC54814F1A2 /* Pods-BaseIOS.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaseIOS/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-staging";
+				PRODUCT_NAME = "$(APP_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		F01AF8E32D80336400E69CDB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72DE18F0CEF824A562E8071 /* Pods-BaseIOSTests.staging.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkh.BaseIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BaseIOS";
+			};
+			name = Staging;
+		};
+		F01AF8E42D80336400E69CDB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B43AF0FF3C3ABB9E81D1A3 /* Pods-BaseIOS-BaseIOSUITests.staging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkh.BaseIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BaseIOS-Staging";
+			};
+			name = Staging;
+		};
+		F0BC43C52D5496FD000ACF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F189CA23E5D5BCB44EBD6F8C /* Pods-BaseIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaseIOS/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-dev";
+				PRODUCT_NAME = "$(APP_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0BC43C62D5496FD000ACF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D29C319C9F31DBC21B8A94C /* Pods-BaseIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BaseIOS/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nkh.BaseIOS;
+				PRODUCT_NAME = "$(APP_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F0BC43C72D5496FD000ACF51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F0BC439D2D5496FB000ACF51 /* BaseIOS */;
+			baseConfigurationReferenceRelativePath = Config/Debug.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -409,6 +700,8 @@
 		};
 		F0BC43C82D5496FD000ACF51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = F0BC439D2D5496FB000ACF51 /* BaseIOS */;
+			baseConfigurationReferenceRelativePath = Config/Release.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -444,7 +737,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -465,6 +758,7 @@
 		};
 		F0BC43CA2D5496FD000ACF51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1F50320647CB469401B351 /* Pods-BaseIOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +777,7 @@
 		};
 		F0BC43CB2D5496FD000ACF51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD93B25C187117D0A86BF4B6 /* Pods-BaseIOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +796,7 @@
 		};
 		F0BC43CD2D5496FD000ACF51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1EFA1A103E39C9F1094B580 /* Pods-BaseIOS-BaseIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -511,12 +807,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BaseIOS;
+				TEST_TARGET_NAME = "BaseIOS-Dev";
 			};
 			name = Debug;
 		};
 		F0BC43CE2D5496FD000ACF51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7427CD34318937D906CF8C /* Pods-BaseIOS-BaseIOSUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -538,6 +835,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0BC43C72D5496FD000ACF51 /* Debug */,
+				F01AF8E12D80336400E69CDB /* Staging */,
 				F0BC43C82D5496FD000ACF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -547,6 +845,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0BC43C52D5496FD000ACF51 /* Debug */,
+				F01AF8E22D80336400E69CDB /* Staging */,
 				F0BC43C62D5496FD000ACF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -556,6 +855,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0BC43CA2D5496FD000ACF51 /* Debug */,
+				F01AF8E32D80336400E69CDB /* Staging */,
 				F0BC43CB2D5496FD000ACF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -565,6 +865,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0BC43CD2D5496FD000ACF51 /* Debug */,
+				F01AF8E42D80336400E69CDB /* Staging */,
 				F0BC43CE2D5496FD000ACF51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

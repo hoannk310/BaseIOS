@@ -1,0 +1,37 @@
+.DS_Store
+xcuserdata/
+*.xcworkspace/
+*.xccheckout
+*.xcscmblueprint
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/
+
+# 💡 Swift Package Manager (SPM)
+.swiftpm/
+.build/
+Package.resolved
+
+# 💡 CocoaPods
+Pods/
+Podfile.lock
+.project.xcworkspace/
+
+# 💡 Realm Database
+*.realm
+*.realm.lock
+*.realm.management
+
+# 💡 Derived Data & Cache
+DerivedData/
+.idea/
+*.hmap
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.xcuserdatad/
+*.xcscheme
+*.xcdebugger/
+
+
