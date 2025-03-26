@@ -1,0 +1,32 @@
+version: 2.1
+workflows:
+  testing:
+    jobs:
+      - runner-test
+jobs:
+  runner-test:
+    machine: true
+    resource_class: hoannk/my-ci
+    steps:
+      - run: echo "Hi I'm on Runners!"
+      - run:
+          shell: zsh
+          name: Kiểm tra Shell của Runner
+          command: |
+            pod install
+      - run:
+          name: Build dự án
+          command: |
+            xcodebuild clean build \
+              -workspace YourProject.xcworkspace \
+              -scheme YourScheme \
+              -destination "platform=iOS Simulator,name=iPhone 15,OS=17.2" \
+              CODE_SIGNING_ALLOWED=NO
+      - run:
+          name: Chạy Unit Tests
+          command: |
+            xcodebuild test \
+              -workspace YourProject.xcworkspace \
+              -scheme YourScheme \
+              -destination "platform=iOS Simulator,name=iPhone 15,OS=17.2" \
+              | xcpretty && exit ${PIPESTATUS[0]}
