@@ -33,6 +33,7 @@ class ViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("hihihi")
     }
     
     override func setupBindings() {
