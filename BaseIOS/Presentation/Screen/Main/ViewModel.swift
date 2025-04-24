@@ -26,8 +26,15 @@ class ViewModel: BaseViewModelType{
                 return self.useCase.login(param: param)
             }.trackError(errorTracker)
         
+        let imagesOutput = input.loadImagesTrigger
+            .flatMapLatest {[weak self] param -> Single<[String]> in
+                guard let self = self else { return Single.error(APIError.unknown) }
+                return self.useCase.getListImage()
+            }.trackError(errorTracker)
+        
         return Output(registerOutput: registerOutput.asDriverOnErrorJustComplete(),
                       loginOutput: loginOutput.asDriverOnErrorJustComplete(),
+                      images: imagesOutput.asDriverOnErrorJustComplete(),
                       errorTracker: errorTracker)
     }
 }
@@ -36,10 +43,12 @@ extension ViewModel {
     struct Input {
         let registerTrigger: Observable<RegisterRequestEntity>
         let loginTrigger: Observable<LoginRequestEntity>
+        let loadImagesTrigger: Observable<Void>
     }
     struct Output {
         let registerOutput: Driver<UserEntity>
         let loginOutput: Driver<UserEntity>
+        let images: Driver<[String]>
         let errorTracker: ErrorTracker
     }
 }

@@ -7,7 +7,8 @@ target 'BaseIOS' do
     pod 'RxSwift', '6.5.0'
     pod 'RxCocoa', '6.5.0'
     pod 'RealmSwift', '~>10'
-  # Pods for BaseIOS
+    pod 'ImageLoaderPod', :path => './ImageLoaderPod'
+    # Pods for BaseIOS
 
   target 'BaseIOSTests' do
     inherit! :search_paths
