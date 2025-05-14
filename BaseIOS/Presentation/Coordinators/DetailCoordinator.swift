@@ -19,7 +19,7 @@ class DetailCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = ViewControllerFactory.makeDetailViewController(coordinator: self)
+        let viewController = ViewControllerFactory.makeViewController(coordinator: self, type: .detail)
         navigationController.pushViewController(viewController, animated: true)
     }
     

@@ -19,7 +19,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = ViewControllerFactory.makeMainViewController(coordinator: self)
+        let viewController = ViewControllerFactory.makeViewController(coordinator: self, type: .main)
         navigationController.pushViewController(viewController, animated: true)
     }
     
