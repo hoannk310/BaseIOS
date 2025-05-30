@@ -1,0 +1,93 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MyFramework",
+    "printedName": "MyFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MyFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MyClass",
+        "printedName": "MyClass",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MyClass",
+                "printedName": "MyFramework.MyClass",
+                "usr": "s:11MyFramework0A5ClassC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11MyFramework0A5ClassCACycfc",
+            "mangledName": "$s11MyFramework0A5ClassCACycfc",
+            "moduleName": "MyFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sayHello",
+            "printedName": "sayHello()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11MyFramework0A5ClassC8sayHelloSSyF",
+            "mangledName": "$s11MyFramework0A5ClassC8sayHelloSSyF",
+            "moduleName": "MyFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11MyFramework0A5ClassC",
+        "mangledName": "$s11MyFramework0A5ClassC",
+        "moduleName": "MyFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

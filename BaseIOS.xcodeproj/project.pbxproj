@@ -10,7 +10,10 @@
 		09F4787D6926917E362859BF /* Pods_BaseIOS_BaseIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EE4E64A237297558126D93 /* Pods_BaseIOS_BaseIOSUITests.framework */; };
 		25AC7C9FDA779B255E62783B /* Pods_BaseIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A48544D559DF0ABAFDF99A /* Pods_BaseIOS.framework */; };
 		CF864CED7F19E5EAA707B230 /* Pods_BaseIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F087B0A83654F5A6A8BF1620 /* Pods_BaseIOSTests.framework */; };
-		FC24AB7E2DBBE98A00388D0F /* ImageLoaderSPM in Frameworks */ = {isa = PBXBuildFile; productRef = FC24AB7D2DBBE98A00388D0F /* ImageLoaderSPM */; };
+		FC60D6C82DE77988008D786D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FC60D6C72DE77987008D786D /* FirebaseAnalytics */; };
+		FC60D6CA2DE77988008D786D /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FC60D6C92DE77988008D786D /* FirebaseCore */; };
+		FC60D6CC2DE77988008D786D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FC60D6CB2DE77988008D786D /* FirebaseDatabase */; };
+		FC621F1D2DE77F9C002D59C0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FC621F1C2DE77F9C002D59C0 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FC0B8FE22DDB9CE60060F240 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		09A48544D559DF0ABAFDF99A /* Pods_BaseIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3058B4EED778CD9CD6D58471 /* Pods-BaseIOS-BaseIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS-BaseIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOS-BaseIOSUITests/Pods-BaseIOS-BaseIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,8 +62,6 @@
 		F0BC43B12D5496FD000ACF51 /* BaseIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC43BB2D5496FD000ACF51 /* BaseIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66F97BE5CC671BAF1A71F70 /* Pods-BaseIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BaseIOSTests/Pods-BaseIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FCF86CDF2DBBDD8D0027B5D6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		FCF86CE12DBBDDBD0027B5D6 /* ImageLoaderSPM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderSPM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -60,11 +74,25 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		FC6220882DE7AFFE002D59C0 /* Exceptions for "BaseIOS" folder in "Embed Frameworks" phase from "BaseIOS" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				WebRTC.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = FC0B8FE22DDB9CE60060F240 /* Embed Frameworks */;
+			membershipExceptions = (
+				WebRTC.xcframework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F0BC439D2D5496FB000ACF51 /* BaseIOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				F0BC43C32D5496FD000ACF51 /* Exceptions for "BaseIOS" folder in "BaseIOS" target */,
+				FC6220882DE7AFFE002D59C0 /* Exceptions for "BaseIOS" folder in "Embed Frameworks" phase from "BaseIOS" target */,
 			);
 			path = BaseIOS;
 			sourceTree = "<group>";
@@ -86,8 +114,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC24AB7E2DBBE98A00388D0F /* ImageLoaderSPM in Frameworks */,
+				FC60D6CC2DE77988008D786D /* FirebaseDatabase in Frameworks */,
 				25AC7C9FDA779B255E62783B /* Pods_BaseIOS.framework in Frameworks */,
+				FC60D6CA2DE77988008D786D /* FirebaseCore in Frameworks */,
+				FC621F1D2DE77F9C002D59C0 /* FirebaseDatabase in Frameworks */,
+				FC60D6C82DE77988008D786D /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +170,6 @@
 		F0BC43922D5496FB000ACF51 = {
 			isa = PBXGroup;
 			children = (
-				FCF86CDE2DBBDD680027B5D6 /* ImageLoaderSPM */,
 				F0BC439D2D5496FB000ACF51 /* BaseIOS */,
 				F0BC43B42D5496FD000ACF51 /* BaseIOSTests */,
 				F0BC43BE2D5496FD000ACF51 /* BaseIOSUITests */,
@@ -159,23 +189,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCF86CDE2DBBDD680027B5D6 /* ImageLoaderSPM */ = {
-			isa = PBXGroup;
-			children = (
-				FCF86CE02DBBDDB10027B5D6 /* Sources */,
-				FCF86CDF2DBBDD8D0027B5D6 /* Package.swift */,
-			);
-			path = ImageLoaderSPM;
-			sourceTree = "<group>";
-		};
-		FCF86CE02DBBDDB10027B5D6 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				FCF86CE12DBBDDBD0027B5D6 /* ImageLoaderSPM.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +201,7 @@
 				F0BC43982D5496FB000ACF51 /* Frameworks */,
 				F0BC43992D5496FB000ACF51 /* Resources */,
 				3F9B1E9D53F437BDE3EC8668 /* [CP] Embed Pods Frameworks */,
+				FC0B8FE22DDB9CE60060F240 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,7 +293,7 @@
 			mainGroup = F0BC43922D5496FB000ACF51;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				FCF86CE22DBBDE490027B5D6 /* XCLocalSwiftPackageReference "ImageLoaderSPM" */,
+				FC60D6C62DE77987008D786D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F0BC439C2D5496FB000ACF51 /* Products */;
@@ -531,9 +545,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SGRJWGC5GH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIOS/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App cần quyền truy cập camera để gọi video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App cần quyền truy cập micro để gọi thoại";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -544,7 +565,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-dev1";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -600,9 +621,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SGRJWGC5GH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/hoannguyen/Documents/Sun/native/BaseIOS/BaseIOS/WebRTC.xcframework,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIOS/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App cần quyền truy cập camera để gọi video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App cần quyền truy cập micro để gọi thoại";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -613,7 +642,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-dev";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-dev1";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -633,9 +662,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SGRJWGC5GH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BaseIOS/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App cần quyền truy cập camera để gọi video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App cần quyền truy cập micro để gọi thoại";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -646,7 +682,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nkh.BaseIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nkh.BaseIOS-dev1";
 				PRODUCT_NAME = "$(APP_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -898,17 +934,37 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		FCF86CE22DBBDE490027B5D6 /* XCLocalSwiftPackageReference "ImageLoaderSPM" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ImageLoaderSPM;
+/* Begin XCRemoteSwiftPackageReference section */
+		FC60D6C62DE77987008D786D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FC24AB7D2DBBE98A00388D0F /* ImageLoaderSPM */ = {
+		FC60D6C72DE77987008D786D /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ImageLoaderSPM;
+			package = FC60D6C62DE77987008D786D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FC60D6C92DE77988008D786D /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC60D6C62DE77987008D786D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		FC60D6CB2DE77988008D786D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC60D6C62DE77987008D786D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		FC621F1C2DE77F9C002D59C0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC60D6C62DE77987008D786D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

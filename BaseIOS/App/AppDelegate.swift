@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import AVFoundation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        checkPermissions { value in
+            print(value)
+        }
         return true
     }
 
@@ -31,6 +37,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    func checkPermissions(completion: @escaping (Bool) -> Void) {
+        let cameraStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        let micStatus = AVCaptureDevice.authorizationStatus(for: .audio)
+        
+        func requestCamera(completion: @escaping (Bool) -> Void) {
+            switch cameraStatus {
+            case .authorized: completion(true)
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .video, completionHandler: completion)
+            default: completion(false)
+            }
+        }
+        
+        func requestMic(completion: @escaping (Bool) -> Void) {
+            switch micStatus {
+            case .authorized: completion(true)
+            case .notDetermined:
+                AVCaptureDevice.requestAccess(for: .audio, completionHandler: completion)
+            default: completion(false)
+            }
+        }
+        
+        requestCamera { cameraGranted in
+            if !cameraGranted {
+                completion(false)
+                return
+            }
+            requestMic { micGranted in
+                completion(micGranted)
+            }
+        }
+    }
 }
 

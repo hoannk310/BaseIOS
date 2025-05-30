@@ -7,16 +7,16 @@
 
 import UIKit
 import RxSwift
+import WebRTC
 
 class ViewController: BaseViewController {
     let coordinator: MainCoordinator
     let viewModel: ViewModel
-    
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
-    @IBOutlet weak var loginStatus: UILabel!
-    @IBOutlet weak var registerStatus: UILabel!
-    @IBOutlet weak var imageTableView: UITableView!
+    @IBOutlet weak var localView: RTCMTLVideoView!
+    @IBOutlet weak var remoteView: RTCMTLVideoView!
+    @IBOutlet weak var joinButton: UIButton!
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var setMicButton: UIButton!
     
     deinit {
         print("deinit \(String(describing: self))")
@@ -37,34 +37,28 @@ class ViewController: BaseViewController {
     }
     
     override func setupViews() {
-        imageTableView.register(TableViewCell.self)
     }
     
     override func setupBindings() {
-        let loginEntity = LoginRequestEntity(email: "hoannk@gmail.com", password: "A123456")
-        let registerEntity = RegisterRequestEntity(email: "hoannk@gmail.com", password: "A123456", name: "hoan", age: 29)
-        let input = ViewModel.Input(registerTrigger: registerButton.rx.tap.map{ registerEntity },
-                                    loginTrigger: loginButton.rx.tap.map{ loginEntity },
-                                    loadImagesTrigger: rx.viewWillAppear.mapToVoid())
+        let input = ViewModel.Input(start: startButton.rx.tap.asObservable(),
+                                    join: joinButton.rx.tap.asObservable(),
+                                    setMic: setMicButton.rx.tap.asObservable())
         let output = viewModel.transform(input: input)
-        output.loginOutput
-            .map{"Login được rồi:\n \($0)"}
-            .drive(loginStatus.rx.text).disposed(by: disposeBag)
-        
-        output.registerOutput
-            .map{"Register được rồi:\n \($0)"}
-            .drive(registerStatus.rx.text).disposed(by: disposeBag)
-        
-        output.errorTracker
-            .driveNext { error in
-                print(error)
+        output.localVideoOutput
+            .drive { [weak self] track in
+                guard let self = self, let track = track else { return }
+                track.add(self.localView)
             }.disposed(by: disposeBag)
         
-        output.images
-            .drive(imageTableView.rx.items(cellIdentifier: "TableViewCell",
-                                           cellType: TableViewCell.self)) { (row, item, cell) in
-                cell.configure(with: item)
+        output.remoteVideoOutput
+            .drive { [weak self] track in
+                guard let self = self, let track = track else { return }
+                track.add(self.remoteView)
             }.disposed(by: disposeBag)
+        
+        output.emptyOutput
+            .drive()
+            .disposed(by: disposeBag)
     }
 }
 
